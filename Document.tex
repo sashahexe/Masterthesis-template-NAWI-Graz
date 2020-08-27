@@ -1,0 +1,117 @@
+\documentclass[a4paper,12pt,twoside]{report}
+
+\usepackage{Packages}
+%\usepackage[framed,numbered,autolinebreaks,useliterate]{listings}
+
+%usepackage{subfig}
+\usepackage{url}
+
+\usepackage{wrapfig}
+\usepackage{graphicx} 
+\usepackage{caption,subcaption}
+%\usepackage[showframe]{geometry}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{pbox}
+
+
+\addto\captionsbritish{\renewcommand{\contentsname}{Table of Contents}}
+
+%\linenumbers
+
+\newcommand{\researchgroup}{Advanced Materials Science. Biobased Materials}
+
+\newcommand{\shortdoctitle}{Doc title}
+\newcommand{\doctitle}{Masterthesis Title}
+\newcommand{\docsubtitle}{}
+
+\newcommand{\authorone}{Alexandra}
+\newcommand{\sauthorone}{Serebrennikova}
+
+\newcommand{\monthYear}{April 2020}
+
+\newcommand{\firstCommitteeMember}{Francesco Greco}
+\newcommand{\secondCommitteeMember}{}
+\newcommand{\thirdCommitteeMember}{}
+
+\author{\me}
+
+%\hypersetup
+%{
+%    pdfauthor   = {\authorone and \authortwo},
+%    pdfsubject  = {\doctitle},
+%    pdfkeywords = {\keywords}
+%}
+
+\begin{document}
+
+\include{Titlepage}
+
+\normalsize
+
+\chapter*{Affidavit}\label{chapter:Affidavit}
+\setcounter{page}{0}
+\pagenumbering{roman}
+\addcontentsline{toc}{chapter}{Affidavit}
+\input{Chapters/Affidavit.tex}
+
+
+\chapter*{Acknowledgments}\label{chapter:Acknowledgments }
+\addcontentsline{toc}{chapter}{Acknowledgments}
+\input{Chapters/Acknowledgments.tex}
+
+
+\chapter*{Abstract}\label{chapter:Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\input{Chapters/Chapter0_Abstract.tex}
+
+
+\tableofcontents
+
+\chapter*{List of Tables}\label{chapter:List of Tables}
+\addcontentsline{toc}{chapter}{List of Tables}
+\input{Chapters/List of Tables.tex}
+
+\chapter*{List of Figures}\label{chapter:List of Figures}
+\addcontentsline{toc}{chapter}{List of Figures}
+\input{Chapters/List of Figures.tex}
+
+\chapter*{Abbreviations}\label{chapter:Abbreviations}
+\addcontentsline{toc}{chapter}{Abbreviations}
+\input{Chapters/Abbreviations.tex}
+
+\chapter{Introduction}\label{chapter:Introduction}
+\setcounter{page}{0}
+\pagenumbering{arabic}
+\input{Chapters/Chapter1_Introduction.tex}
+
+
+\chapter{Theoretical Aspects}\label{chapter:Theory}
+\input{Chapters/Chapter2_Theory.tex}
+
+
+
+\chapter{Experimental set-up}\label{chapter:Experimental set-up and Results}
+\input{Chapters/Chapter3_Experimental_set-up.tex}
+
+\chapter{Miscellaneous}\label{chapter:Miscellaneous}
+\input{Chapters/Miscellaneous}
+ 
+\chapter{Experimental Results and Discussion}\label{chapter:Results and discussion}
+\input{Chapters/Chapter4_Results_and_discussion.tex}
+
+
+\chapter{Summary}\label{chapter:Summary}
+\input{Chapters/Chapter4_Summary.tex}
+
+\bibliographystyle{unsrt}
+\bibliography{References}
+\newpage
+
+\appendix
+\addcontentsline{toc}{chapter}{Appendix}
+\chapter{Appendix A}\label{chapter:Appendix A}
+\input{Appendices/Appendix_A.tex}
+
+\end{document}
+
